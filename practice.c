@@ -1,11 +1,13 @@
 #include<stdio.h>
+int incrementVal(int x){
+ 
+  return x++;
+} 
 int main(){
-	int i ,j ;
-	for(i='a';i<='d';i++){
-		for(j='a';j<=i;j++){
-			printf("%c ", j);
-		}
-		printf("\n");
-	}
-	return 0;
+  int i;
+ static int x=20;
+  for(i=0;i<5;i++){
+    printf("value is :%d\n",x++);
+  }
+   return 0;
 }
